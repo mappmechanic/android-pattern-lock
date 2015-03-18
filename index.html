@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Android Lock Pattern Example</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <h1>Android Lock Pattern Component</h1>
+
+    <div id="lockContainer"></div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", domReady, false);
+
+        // Function That runs when DOM is loaded
+        // It will work on Chrome/Mozilla/Opera only
+        function domReady() {
+            var lockContainer = document.getElementById('lockContainer');
+            AndroidLock.init(lockContainer, {
+                rows: 3,
+                cols: 3,
+            });
+        }
+    </script>
+</body>
+
+</html>
